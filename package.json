@@ -1,0 +1,23 @@
+{
+  "name": "userapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:init": "node src/server.js",
+    "prisma:reset": "npx prisma migrate reset",
+    "prisma:migrate": "npx prisma migrate dev --name init",
+    "prisma:deploy": "npx prisma migrate deploy",
+    "prisma:generate": "npx prisma generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "express": "^5.2.1",
+    "prisma": "^6.19.3"
+  }
+}
